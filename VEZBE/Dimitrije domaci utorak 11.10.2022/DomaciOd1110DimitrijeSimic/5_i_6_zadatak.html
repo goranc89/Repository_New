@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<h1>Age based on entered number</h1>
+
+<script>
+
+function calc()
+        {
+            var y = parseInt(document.getElementById('n1').value);
+                if(y>=18)
+                {
+                document.getElementById('result1').value="You are old enough to drive!";
+                }
+                else
+                {
+                document.getElementById('result1').value="You must wait "+(18-y)+" years to drive!";
+                }
+        }
+function compare()
+{
+    var n1 = parseInt(document.getElementById('n1').value);
+    var n2 = parseInt(document.getElementById('n2').value);
+    if(n1>n2)
+                {
+                document.getElementById('result2').value="You are "+(n1-n2)+" years yanger than me!";
+                }
+    else if(n2>n1)
+    {
+                document.getElementById('result2').value="You are "+(n2-n1)+" years older than me!";
+    }
+
+    else
+    {
+                document.getElementById('result2').value="We are the same age!";
+    }
+}
+</script>
+</head>
+
+<body>
+    My age: <input type="text" id="n1" placeholder="ZA 5. i 6. ZADATAK!"><br><br>
+    You age: <input type="text" id="n2" placeholder="SAMO ZA 6. ZADATAK!"><br><br><!-- za 6. zadatak-->
+    <button onclick="calc();">TSAK 5</button><br><br>
+    <button onclick="compare();">TSAK 6</button><br><br>
+    Result-1: <output type="parseInt" id="result1"><br><br>
+    Result-2: <output type="parseInt" id="result2"></output>
+</body>
+</html>

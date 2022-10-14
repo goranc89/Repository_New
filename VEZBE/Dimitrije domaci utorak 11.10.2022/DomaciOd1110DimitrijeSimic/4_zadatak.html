@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<h1>4. TSAK</h1>
+
+<script>
+
+function calc()
+        {
+            var n1 = parseInt(document.getElementById('n1').value);
+            var n2 = String(document.getElementById('n2').value);
+
+            document.getElementById('result1').value= n1+" "+ n2;
+
+        }
+</script>
+</head>
+
+<body>
+    Number: <input type="number" id="n1"><br><br>
+    <label for="pet-select">Choose a pet:</label>
+
+<select name="pets" id="n2">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="Geese">Geese</option>
+    <option value="Sheep">Sheep</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select><br><br>
+    <button onclick="calc();">TSAK 4</button><br><br>
+    Result: <output type="parseInt" id="result1">
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<h1>3. TSAK</h1>
+
+<script>
+
+function calc()
+{
+            var n = parseInt(document.getElementById('n').value);
+if (50<n && n<61)
+{
+    document.getElementById('result1').value= "Your grade is E!";
+}
+else if (60<n && n<71)
+{
+    document.getElementById('result1').value= "Your grade is D!";
+}
+else if (70<n && n<81)
+{
+    document.getElementById('result1').value= "Your grade is C!";
+}
+else if (80<n && n<91)
+{
+    document.getElementById('result1').value= "Your grade is B!";
+}
+else if (90<n && n<101)
+{
+    document.getElementById('result1').value= "Your grade is A!";
+}
+else
+{
+    document.getElementById('result1').value= "You are failed the exam!";
+}
+}
+</script>
+</head>
+
+<body>
+    Input marks: <input type="number" id="n"><br><br>
+    <button onclick="calc();">TSAK 3</button><br><br>
+    Result: <output type="text" id="result1">
+</body>
+</html>
