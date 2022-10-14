@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>File input/Submit </h1>
+<form action="handle-upload.html" method="post">
+<br>
+<h2>Then VS Now</h2>
+<br>
+<div>
+    <label for="userImageThen">Upload your image before you started working out</label>
+    <br>
+    <input type="file" name="userImageThen" id="userImageThen" accept="image/*" />
+    <br>
+    <label for="comment">Please enter your comment</label>
+    <br>
+    <textarea name="comment" id="comment" minlength="10" rows="10"></textarea>
+    <br/>
+</div>
+<div>
+    <label for="userImageNow">Upload your image how you look now</label>
+    <br/>
+    <input type="file" name="userImageNow" id="userImageNow" accept="image/*" />
+    <br/>
+    <label for="comment">Please enter your comment</label>
+    <br/>
+    <textarea name="comment" id="comment" minlength="10" rows="10"></textarea>
+    <br />
+</div>
+<br>
+<a href='handle-upload.html'><button type="submit" > POSALJI</button></a>
+</form>    
+</body>
+</html>
