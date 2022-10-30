@@ -11,6 +11,8 @@ function max2nmb(number1, number2) {
 console.log("1.Zadatak " + max2nmb(6, 5));
 // 2.Zadatak Write a program that checks if a given number is odd.
 function oddNumb(number3) {
+    //KOMENTAR: U IF uslovu nisi napisao sta tacno poredis. U redu je sto si napisao number3 % 2, jasno da proveravas da li je deljiv sa 2 bez ostatka ali
+    // nisi napisao sa cim se ta vrednost poredi. Dakle nedostaje ti znak jednakosti. Treba number3 % 2 == 1 :) 
     if (number3 % 2) {
         isOdd = true;
     }
@@ -35,6 +37,8 @@ console.log("3.Zadatak " + isthreeLN(999));
 
 // 4.	Write a program that calculates an arithmetic mean of four numbers.
 function aritmeticMean(number5, number6, number7, number8) {
+    //KOMENAR: Nisi nigde definisao promenjivu n. Moras uvek iskoristiti kljucnu rec var ili let kod definisanja promenjivih.
+    // Ovo mozda radi ali nije dobra praksa. I koristi znak tacka zarez na kraju svakog reda :) 
     n = (number5 + number6 + number7 + number8) / 4
     return n
 }
