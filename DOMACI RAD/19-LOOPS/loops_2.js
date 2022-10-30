@@ -8,5 +8,7 @@ var sum = "";
     }
     console.log(x + " up to cube equals " + sum)
 
+
+//KOMENTAR: Ovde smo rekli da probas da uradis kroz petlju mnozenje, jer umesto kuba smo mogli da trazimo i peti stepen :)
         
           
